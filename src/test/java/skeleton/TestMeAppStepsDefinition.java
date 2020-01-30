@@ -59,14 +59,14 @@ public class TestMeAppStepsDefinition
 	{
 	    // Write code here that turns the phrase above into concrete actions
 	   // throw new cucumber.api.PendingException();
-		/*WebElement login = driver.findElement(By.linkText("SignIn"));
+		WebElement login = driver.findElement(By.linkText("SignIn"));
 		login.click();
 
-		WebElement name = driver.findElement(By.name("userName"));
+		/*WebElement name = driver.findElement(By.name("userName"));
 		name.clear();
 		name.sendKeys(userName);*/
 		
-		LoginObjects.username.sendKeys(userName);
+		LoginObjects.userName.sendKeys(userName);
 		
 	}
 
@@ -79,7 +79,7 @@ public class TestMeAppStepsDefinition
 		password.clear();
 		password.sendKeys(passw);*/
 		
-		LoginObjects.username.sendKeys(passw);
+		LoginObjects.password.sendKeys(passw);
 		
 	}
 
